@@ -1,4 +1,4 @@
-//factorial
+//factorial O(n)
 function factorial(value){
     let ans = 1;
     if(value === 2){
@@ -8,7 +8,7 @@ function factorial(value){
 }
 console.log(factorial(5));
 
-//fib
+//fib  O(2^n)
 // fibonacci series
 let arr = [0,1];
 function fib(limit){
