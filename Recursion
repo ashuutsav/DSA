@@ -7,3 +7,18 @@ function factorial(value){
     return value*factorial(value-1);
 }
 console.log(factorial(5));
+
+//fib
+// fibonacci series
+let arr = [0,1];
+function fib(limit){
+    if(limit === 2){
+        return [0,1];
+    }
+    
+    arr = fib(limit-1);
+    arr.push(arr[arr.length-1]+arr[arr.length-2]);
+    return arr;
+    
+}
+console.log(fib(5));
